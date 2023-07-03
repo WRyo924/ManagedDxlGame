@@ -6,6 +6,8 @@ public:
 	static constexpr int MOVE_SPEED = 5;
 	static constexpr int SIZE_WIDTH = 100;
 	static constexpr int SIZE_HEIGHT = 30;
+
+	//player‚Ì‰ŠúˆÊ’u
 	tnl::Vector3 pos_ = { DXE_WINDOW_WIDTH / 2,DXE_WINDOW_HEIGHT * 0.8f,0 };
 
 	void update(float delta_time);

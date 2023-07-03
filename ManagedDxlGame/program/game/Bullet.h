@@ -4,15 +4,20 @@
 
 class Bullet {
 public:
-	static constexpr double BULLET_x = 0;
-	static constexpr double BULLET_y = 0;
-	static constexpr int BULLET_SPEED = 5;
-	static constexpr int SIZE_WIDTH = 5;
-	static constexpr int SIZE_HEIGHT = 5;
-	tnl::Vector3 pos_ = { DXE_WINDOW_WIDTH / 2,DXE_WINDOW_HEIGHT * 0.8f,0 };
-	bool flag;
-	int count;
-	int shot[20] = {0};
+	Bullet();	//ê∂ê¨Ç≥ÇÍÇΩÇ∆Ç´Ç…ç≈èâé©ìÆìIÇ…î≠ìÆÇ∑ÇÈä÷êî
+	//~Bullet();
+public:
+	//static constexpr double BULLET_x = 0;
+	//static constexpr double BULLET_y = 0;
+	
+	static constexpr float BULLET_SPEED = 5;
+
+	tnl::Vector3 pos = { DXE_WINDOW_WIDTH/2,DXE_WINDOW_HEIGHT * 0.8f,0 };
+	int sizeW = 8;
+	int sizeH = 8;
+	bool sFlag;		//ê∂Ç´ÇƒÇÈÇ©Ç«Ç§Ç©
+	//int count; çƒî≠éÀ
+	
 
 	void update(float delta_time);
 	void draw();
